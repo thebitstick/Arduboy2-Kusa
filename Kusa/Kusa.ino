@@ -11,7 +11,7 @@
 
 Arduboy2 arduboy;
 
-#define FRAME_RATE 15
+#define FRAME_RATE 8
 
 PROGMEM const byte kusa[] = { 0xf0, 0x51,0x57, }; // くさ
 
@@ -67,6 +67,7 @@ void loop() {
     Keyboard.write('u');
     Keyboard.write('s');
     Keyboard.write('a');
+    Keyboard.write(32);
   }
 
   arduboy.clear();
